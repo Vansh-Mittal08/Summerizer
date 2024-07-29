@@ -110,3 +110,6 @@ body {
     color: white;
     pointer-events: none;
 }
+textarea{
+    resize:none;
+}
