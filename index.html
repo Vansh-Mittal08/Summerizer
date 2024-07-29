@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <h2>SummarAIze</h2>
+        <div id="buttons">
+                <button type="button" class="button" id="loginButton">
+                    Log in
+                    <!-- <a href="login.html" ></a> -->
+                </button>            
+                <button type="button" class="button" id="signupButton">
+                    Sign up
+                </button>
+        </div>
+    </div>
+    <div id="main">
+        <div id="input">
+            <textarea name="text-user" id="input-user">Enter Here</textarea>
+        </div>
+        <div id="essential-buttons">
+            <button class="eb" type="submit">Summarize</button>
+            <button class="eb" type="reset">Refresh</button>
+        </div>
+        <div id="output">
+            <textarea name="text-server" id="output-user" readonly>output will be here</textarea>
+        </div>
+    </div>
+</body>
+<script>
+    document.getElementById('loginButton').addEventListener('click', function() {
+        window.location.href = 'login.html';
+    });
+    
+    document.getElementById('signupButton').addEventListener('click', function() {
+        window.location.href = 'signup.html';
+    });
+</script>
+</html>
